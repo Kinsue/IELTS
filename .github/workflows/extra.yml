@@ -23,6 +23,7 @@ jobs:
         with:
           files: "**/*.md"
           json: true
+          quotepath: false # 强制不使用转义路径，匹配中文
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -31,9 +32,8 @@ jobs:
 
       - name: Run extraction
         id: run-script # 添加 ID 方便引用输出
-        if: steps.changed-files.outputs.any_changed == 'true'
         run: |
-          python extract_highlights.py '${{ steps.changed-files.outputs.all_changed_files }}'
+          python script/extract_highlights.py '${{ steps.changed-files.outputs.all_changed_files }}'
 
       - name: Commit and push changes
         if: steps.changed-files.outputs.any_changed == 'true'
