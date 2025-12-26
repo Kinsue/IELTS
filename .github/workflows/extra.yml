@@ -1,0 +1,55 @@
+name: Extract Changed Markdown Highlights
+
+on:
+  push:
+    paths:
+      - '**/*.md'
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: "**/*.md"
+          json: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run extraction
+        id: run-script # 添加 ID 方便引用输出
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          python extract_highlights.py '${{ steps.changed-files.outputs.all_changed_files }}'
+
+      - name: Commit and push changes
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 1. 匹配所有以 _words.txt 结尾的文件
+          git add "**/*_words.txt"
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # 2. 从 Python 的输出中获取文件名列表构建 Commit Message
+            # 使用 steps.run-script.outputs.file_names
+            FILE_LIST="${{ steps.run-script.outputs.file_names }}"
+            git commit -m "Auto-update highlights for: $FILE_LIST"
+            git push
+          fi
