@@ -30,6 +30,11 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: |
+          pip install nltk
+          python -c "import nltk; nltk.download('wordnet'); nltk.download('omw-1.4')"
+
       - name: Run extraction
         id: run-script # 添加 ID 方便引用输出
         run: |

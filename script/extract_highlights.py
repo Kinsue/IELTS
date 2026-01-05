@@ -2,6 +2,7 @@ import re
 import os
 import sys
 import json
+from nltk.stem import WordNetLemmatizer as wnl
 
 def process_file(file_path):
     if not os.path.exists(file_path):
@@ -13,7 +14,7 @@ def process_file(file_path):
     pattern = r'==(.*?)=='
     matches = re.findall(pattern, content, re.DOTALL)
 
-    unique_results = sorted(list(set(m.strip() for m in matches if m.strip())))
+    unique_results = sorted(list(set(WordLemmatization(m.strip()) for m in matches if m.strip())))
 
     output_path = os.path.splitext(file_path)[0] + "_words.txt"
 
@@ -34,6 +35,9 @@ def process_file(file_path):
         f.write(new_content)
     print(f"Updated: {output_path}")
     return True
+
+def WordLemmatization(word: str):
+    return wnl().lemmatize(word)
 
 if __name__ == "__main__":
     processed_files = []
