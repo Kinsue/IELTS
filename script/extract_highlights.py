@@ -59,10 +59,8 @@ if __name__ == "__main__":
         for file in files:
             if file.endswith('.md'):
                 md_path = os.path.join(root, file)
-                txt_path = os.path.splitext(md_path)[0] + "_words.txt"
-                if not os.path.exists(txt_path):
-                    if process_file(md_path):
-                        processed_files.append(md_path)
+                if process_file(md_path):
+                    processed_files.append(md_path)
 
     # 给 Action 提供输出名
     if processed_files and "GITHUB_OUTPUT" in os.environ:

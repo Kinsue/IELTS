@@ -2,13 +2,13 @@
 
 Some of the most important decisions of our lives ==occur== while we’re feeling stressed and anxious. From medical decisions to financial and professional ones, we are all sometimes required to ==weigh up== information under stressful conditions. But do we become better or worse at processing and using information under such ==circumstances==?
 
-My ==colleague== and I, both ==neuroscientists==, wanted to investigate how the mind operates under stress, so we visited some local fire stations. Firefighters’ workdays ==vary== quite a bit. Some are pretty relaxed; they’ll spend their time washing the truck, cleaning equipment, cooking meals and reading. Other days can be ==hectic==, with ==numerous== life-threatening ==incidents== to attend to; they’ll enter burning homes to ==rescue== ==trapped== ==residents==, and assist with medical emergencies. These ups and downs ==presented== the perfect setting for an experiment on how people’s ability to use information changes when they feel under pressure.
+My ==colleague== and I, both ==neuroscientists==, wanted to investigate how the mind operates under stress, so we visited some local fire stations. Fi refighters’ workdays ==vary== quite a bit. Some are pretty relaxed; they’ll spend their time washing the truck, cleaning equipment, cooking meals and reading. Other days can be ==hectic==, with ==numerous== life-threatening ==incidents== to attend to; they’ll enter burning homes to ==rescue== ==trapped== ==residents==, and assist with medical emergencies. These ups and downs ==presented== the perfect setting for an experiment on how people’s ability to use information changes when they feel under pressure.
 
 We found that ==perceived== ==threat== acted as a trigger for a stress ==reaction== that made the task of processing information easier for the firefighters – but only as long as it ==conveyed== bad news.
 
 This is how we arrived at these results. We asked the firefighters to estimate their ==likelihood== of experiencing 40 different ==adverse== events in their life, such as being involved in an ==accident== or becoming a ==victim== of card ==fraud==. We then gave them either good news (that their ==likelihood== of experiencing these events was lower than they’d thought) or bad news (that it was higher) and asked them to provide new ==estimates==.
 
-People are normally quite optimistic – they will ignore bad news and ==embrace== the good. This is what happened when the firefighters were relaxed; but when they were under stress, a different ==pattern== ==emerged==. Under these conditions, they became hyper-==vigilant== to bad news, even when it had nothing to do with their job (such as learning that the ==likelihood== of card ==fraud== was higher than they’d thought), and ==altered== their ==beliefs== in response. In contrast, stress didn’t change how they responded to good news (such as learning that the likelihood of card fraud was lower than they’d thought).
+People are normally quite optimistic – they will ignore bad news and ==embrace== the good. This is what happened when the firefighters were relaxed; but when they were under stress, a different ==pattern== ==emerged==. Under these conditions, they became hyper-==vigilant== to bad news, even when it had nothing to do with their job (such as learning that the ==likelihood== of card ==fraud== was higher than they’d thought), and ==altered== their ==beliefs== in response. In ==contrast==, stress didn’t change how they responded to good news (such as learning that the likelihood of card fraud was lower than they’d thought).
 
 Back in our lab, we ==observed== the same pattern in students who were told they had to give a surprise public speech, which would be judged by a ==panel==, recorded and posted online. Sure enough, their ==cortisol== levels ==spiked==, their heart rates went up and they suddenly became better at processing ==unrelated==, yet alarming, information about rates of disease and violence.
 
@@ -96,17 +96,17 @@ _Complete each sentence with the correct ending, **A–G**, below._ 
 35. In both experiments, negative information was processed better when the subjects __
 
 - **A.** made them feel optimistic.
-    
+  
 - **B.** took relatively little notice of bad news.
-    
+  
 - **C.** responded to negative and positive information in the same way.
-    
+  
 - **D.** were feeling under stress.
-    
+  
 - **E.** put them in a stressful situation.
-    
+  
 - **F.** behaved in a similar manner, ==regardless== of the ==circumstances==.
-    
+  
 - **G.** thought it more likely that they would experience something bad.
 
 
